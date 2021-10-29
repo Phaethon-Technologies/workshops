@@ -15,5 +15,9 @@ let occupation = 'Programmer';
 let message = 'സന്മനസ്സുള്ളവർക്ക് സമാധാനം';
 let newMessage = `My name is ${name} and I am ${age} years old`;
 
+// These are also correct
+let $ = "This is a perfectly valid variable";
+let _ = "This one too is valid"
+
 // A simple Hello World statement
 alert(newMessage);
