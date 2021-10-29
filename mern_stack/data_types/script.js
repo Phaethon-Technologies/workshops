@@ -10,3 +10,12 @@ let message = "This is a message written in English";
 
 // Let's make it a number
 message = 512;
+
+// Do you know that numbers can also hold floats?
+let answerToLife = 4.2;
+
+// A number can hold Inifinity
+let sizeOfUniverse = Infinity;
+
+// Infinity can also result from a division by zero
+let divisionByZero = 1 / 0;
