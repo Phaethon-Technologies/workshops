@@ -18,4 +18,8 @@ let answerToLife = 4.2;
 let sizeOfUniverse = Infinity;
 
 // Infinity can also result from a division by zero
+// Doing maths in JS is safe
 let divisionByZero = 1 / 0;
+
+// BigInt
+let myBigInt = 1234567890123456789012345678901234567890n;
