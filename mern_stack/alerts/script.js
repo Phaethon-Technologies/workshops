@@ -1,5 +1,5 @@
 /*
-Let's try alerting users
+Let us use prompt, alert and confirm
 */
 
 // Use all the modern JS goodiness
