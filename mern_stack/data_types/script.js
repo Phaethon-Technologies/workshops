@@ -37,3 +37,6 @@ let capitalOfAlappuzha;
 // One can also explicity assign undefined to a variable
 // Prefer null over following method
 let anUndefinedVariable = undefined;
+
+// Let us check the data types of variables
+alert(`isSkodaReliable is a ${typeof(isSkodaReliable)}`);
