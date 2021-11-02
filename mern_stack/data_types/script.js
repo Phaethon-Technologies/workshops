@@ -23,3 +23,12 @@ let divisionByZero = 1 / 0;
 
 // BigInt
 let myBigInt = 1234567890123456789012345678901234567890n;
+
+// Let's try some boolean values
+let isSkodaReliable = false;
+let isSkodaFunToDrive = true; // probably needs more emphasis
+
+// The following value is undefined
+let guruMeditation = null;
+
+
