@@ -16,6 +16,10 @@ alert(`The product of ${firstNumber} and ${secondNumber} is ${firstNumber * seco
 let myStringNumber = 128;
 let convertedNumber = Number(myStringNumber);
 
-// An undefined variable becomes NaN
+// An undefined string becomes NaN when converting to Number
 let undefinedVariable;
 alert(`The value of undefinedVariable is ${Number(undefinedVariable)}`);
+
+// A string with alphabets return NaN when converting to Number
+let invalidNumber = "800dx";
+alert(`the value of invalidNumber is ${Number(invalidNumber)}`);
