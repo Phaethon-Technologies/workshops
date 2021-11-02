@@ -28,7 +28,12 @@ let myBigInt = 1234567890123456789012345678901234567890n;
 let isSkodaReliable = false;
 let isSkodaFunToDrive = true; // probably needs more emphasis
 
-// The following value is undefined
+// The following is a null value
 let guruMeditation = null;
 
+// Here we have a similar concept called undefined
+let capitalOfAlappuzha;
 
+// One can also explicity assign undefined to a variable
+// Prefer null over following method
+let anUndefinedVariable = undefined;
