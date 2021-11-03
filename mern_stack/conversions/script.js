@@ -23,3 +23,15 @@ alert(`The value of undefinedVariable is ${Number(undefinedVariable)}`);
 // A string with alphabets return NaN when converting to Number
 let invalidNumber = "800dx";
 alert(`the value of invalidNumber is ${Number(invalidNumber)}`);
+
+// Zero (0) when converted to Boolean becomes false
+let valueOfZero = Boolean(0);
+
+// Null when converted to Boolean becomes false
+let valueofNull = Boolean(null);
+
+// A non-empty string when converted to Boolean becomes true
+let valueofString = Boolean(" ");
+
+// The string "0" gets becomes true when using Boolean conversion
+let valueOfStringZero = Boolean("0");
