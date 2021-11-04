@@ -35,3 +35,10 @@ let newSum = "1" + 2 + 3; // Here the answer will be 123
 // The unary + operator can be used as an alternative to Number() method
 let justAnotherString = "5";
 let justAnotherNumber = +justAnotherString; // Will convert justAnotherString to a number
+
+// Unary + can be used to convert strings on the fly for summing them
+let theNumberNine = "9";
+let theNumberSeven = "7";
+let sumOfNumbers = +theNumberNine + +theNumberSeven; // This will result in 16
+
+
