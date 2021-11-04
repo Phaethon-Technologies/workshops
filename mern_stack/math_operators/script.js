@@ -26,3 +26,8 @@ let stitchedString = firstString + secondString;
 let anotherString = "The answer to life is ";
 let justANumber = 42;
 let stitch = anotherString + justANumber;
+
+// You have to be careful when using the + operator when it involves more than a number
+let mySum = "1" + 1 + 1 + "3"; // Here the answer will be 1113
+let anotherSum = 1 + 2 + "3"; // Here the answer will be 33
+let newSum = "1" + 2 + 3; // Here the answer will be 123
