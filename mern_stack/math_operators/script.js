@@ -57,4 +57,9 @@ salary += 2000; // This can be used with other operators as well
 // Incrementing and decrementing values and assign the new value back to the variable
 let numberOfTyres = 4;
 --numberOfTyres; // A three wheeler
-++numberOfTyres // We now have a four wheeler
+++numberOfTyres; // We now have a four wheeler
+
+// Using increment/decrement operators in prefix and postfix form
+let theVariable = 0;
+let prefixValue = ++theVariable; // Increments initialValue and returns the incremented value, ie. 1
+let postfixValue = theVariable++; // Returns the value of theVariable, ie. 1 and then increments it
