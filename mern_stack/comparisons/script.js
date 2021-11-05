@@ -29,3 +29,12 @@ equalityCheck = null == undefined; // Results in true
 
 // For the strict equality checker, they are different as they belong to separate types
 equalityCheck = null === undefined; // Returns false
+
+// The equality operator for the following expression returns false
+// Only null and undefined are equivalent to each other
+equalityCheck = null == 0 // Returns false
+
+// The rest of the comparison operators work by converting null to 0
+equalityCheck = null >= 0 // Returns true
+equalityCheck = null <= 0 // Returns true
+
