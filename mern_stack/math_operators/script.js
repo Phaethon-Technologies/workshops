@@ -63,3 +63,7 @@ let numberOfTyres = 4;
 let theVariable = 0;
 let prefixValue = ++theVariable; // Increments initialValue and returns the incremented value, ie. 1
 let postfixValue = theVariable++; // Returns the value of theVariable, ie. 1 and then increments it
+
+// The comma operator helps us to divide and evaluates all expressions, but returns only the last one
+// Brackets are necessary as "," has very low precedence
+let resultOfCommaOperator = (2 + 3, 5 + 4); // Returns 9
