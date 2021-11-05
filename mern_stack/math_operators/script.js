@@ -46,3 +46,8 @@ let a = 1;
 let b = 3;
 // a = b + 2 results in 5 and it returns the value which is then summed with 3
 let c = 3 + (a = b + 2); // This results in 8
+
+// Chaining assignments, d and e end up having the value 4
+d = e = 4 + 4;
+
+
