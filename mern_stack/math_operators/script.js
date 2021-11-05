@@ -41,4 +41,8 @@ let theNumberNine = "9";
 let theNumberSeven = "7";
 let sumOfNumbers = +theNumberNine + +theNumberSeven; // This will result in 16
 
-
+// The assignment operator is interesting, it returns value
+let a = 1;
+let b = 3;
+// a = b + 2 results in 5 and it returns the value which is then summed with 3
+let c = 3 + (a = b + 2); // This results in 8
