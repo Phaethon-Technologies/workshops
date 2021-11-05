@@ -48,6 +48,9 @@ let b = 3;
 let c = 3 + (a = b + 2); // This results in 8
 
 // Chaining assignments, d and e end up having the value 4
-d = e = 4 + 4;
+let d = e = 4 + 4;
 
-
+// Modifying in-place, storing the sum in the same variable
+// This can be used with other operators as well
+let salary = 5000;
+salary += 2000;
