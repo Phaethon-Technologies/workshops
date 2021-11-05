@@ -51,6 +51,10 @@ let c = 3 + (a = b + 2); // This results in 8
 let d = e = 4 + 4;
 
 // Modifying in-place, storing the sum in the same variable
-// This can be used with other operators as well
 let salary = 5000;
-salary += 2000;
+salary += 2000; // This can be used with other operators as well
+
+// Incrementing and decrementing values and assign the new value back to the variable
+let numberOfTyres = 4;
+--numberOfTyres; // A three wheeler
+++numberOfTyres // We now have a four wheeler
