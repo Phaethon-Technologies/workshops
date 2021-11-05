@@ -23,3 +23,9 @@ equalityCheck = '5' === 5; // Returns false
 
 // There is also a strict inequality operator
 equalityCheck = '5' !== 5; // Returns true
+
+// null and undefined are equivalent in the eyes of equivalent operator
+equalityCheck = null == undefined; // Results in true
+
+// For the strict equality checker, they are different as they belong to separate types
+equalityCheck = null === undefined; // Returns false
