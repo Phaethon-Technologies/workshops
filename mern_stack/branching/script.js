@@ -28,3 +28,9 @@ if (userAge < 25) {
 // Conditional operator
 let userOS = prompt("Which OS do you use?", "Linux");
 let userType = (userOS == "Linux") ? "Nerd" : "Consumer";
+
+// Chaining conditional operator
+userType = (userOS == "BSD") ? "Pro" :
+    (userOS == "UNIX") ? "Old timer" :
+    (userOS == "Android") ? "Mobile user" :
+    "Hmm, I guess you are running Plan 9?";
