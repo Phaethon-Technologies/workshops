@@ -14,3 +14,13 @@ if (isLifeGood == true) {
     alert("Life's good!");
     alert("Do you know that the above statement is LG's trademark?");
 }
+
+// The else if statement
+let userAge = prompt("How old are you?", 25);
+if (userAge < 25) {
+    alert("Still young eh?");
+} else if (userAge > 25) {
+    alert("Getting old, getting old :D");
+} else {
+    alert("You are 25 years of age!");
+}
