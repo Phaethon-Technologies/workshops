@@ -26,5 +26,5 @@ if (userAge < 25) {
 }
 
 // Conditional operator
-let userOS = alert("Which OS do you use?", "Linux");
+let userOS = prompt("Which OS do you use?", "Linux");
 let userType = (userOS == "Linux") ? "Nerd" : "Consumer";
