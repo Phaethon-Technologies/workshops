@@ -24,3 +24,7 @@ if (userAge < 25) {
 } else {
     alert("You are 25 years of age!");
 }
+
+// Conditional operator
+let userOS = alert("Which OS do you use?", "Linux");
+let userType = (userOS == "Linux") ? "Nerd" : "Consumer";
