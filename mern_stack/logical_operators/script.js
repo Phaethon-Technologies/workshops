@@ -19,4 +19,6 @@ let firstName = "";
 let lastName = "Kurian";
 let givenName = firstName || lastName || null; // Stores Kurian as givenName
 
-
+// Nullish coalescing operator returns the first defined value
+let undefinedUser;
+let givenUser = undefinedUser || "Anonymous";
