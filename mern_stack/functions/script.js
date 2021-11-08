@@ -23,7 +23,7 @@ function getAreaCircle(radius) {
     return 3.14 * radius ** 2;
 }
 
-// Function expression
+// Alternative syntax to declare a function (Function expression)
 let getAreaRectangle = function(length, breadth) {
     return length * breadth;
 }
