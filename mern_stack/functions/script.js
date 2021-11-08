@@ -55,3 +55,8 @@ quoteOfTheDay(
     () => alert("The future depends on what you do today - M.K Gandhi"),
     () => alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho")
 )
+
+// Multiline arrow function
+let convertKmToMiles = (km) => {
+    return km * 0.621371;
+};
