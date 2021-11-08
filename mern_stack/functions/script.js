@@ -12,3 +12,13 @@ function myFirstFunction() {
 
 // Function call
 myFirstFunction();
+
+// Function with default arguments
+function greetUser(userName = "friend") {
+    console.log(`Hey there ${userName}! Good day to yeh :)`)
+}
+
+// Function to calcuate area of a circle
+function getAreaCircle(radius) {
+    return 3.14 * radius ** 2;
+}
