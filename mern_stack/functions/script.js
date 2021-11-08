@@ -26,7 +26,19 @@ function getAreaCircle(radius) {
 // Alternative syntax to declare a function (Function expression)
 let getAreaRectangle = function(length, breadth) {
     return length * breadth;
-}
+};
 
 // Copy function to another variable
 let copyOfGetAreaRectangle = getAreaRectangle;
+
+// Call back functions
+function quoteOfTheDay(question, happy, sad) {
+    if (confirm(question)) return happy();
+    return sad();
+}
+
+quoteOfTheDay(
+    "Would you like a happy quote?",
+    function() {alert("The future depends on what you do today - M.K Gandhi");},
+    function() {alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho");}
+)
