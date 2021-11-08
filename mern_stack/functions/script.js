@@ -31,14 +31,15 @@ let getAreaRectangle = function(length, breadth) {
 // Copy function to another variable
 let copyOfGetAreaRectangle = getAreaRectangle;
 
-// Call back functions
+// Callback functions
 function quoteOfTheDay(question, happy, sad) {
     if (confirm(question)) return happy();
     return sad();
 }
 
+// Setting up our callback functions using Anonymous functions
 quoteOfTheDay(
     "Would you like a happy quote?",
-    function() {alert("The future depends on what you do today - M.K Gandhi");},
-    function() {alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho");}
+    function() {alert("The future depends on what you do today - M.K Gandhi");}, // Anonymous function
+    function() {alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho");} // Anonymous function
 )
