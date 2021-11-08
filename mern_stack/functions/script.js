@@ -22,3 +22,8 @@ function greetUser(userName = "friend") {
 function getAreaCircle(radius) {
     return 3.14 * radius ** 2;
 }
+
+// Function expression
+let getAreaRectange = function(length, breadth) {
+    return length * breadth;
+}
