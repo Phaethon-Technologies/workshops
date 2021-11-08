@@ -44,3 +44,14 @@ quoteOfTheDay(
     function() {alert("The future depends on what you do today - M.K Gandhi");}, // Anonymous function
     function() {alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho");} // Anonymous function
 )
+
+// Arrow function
+let getSquare = (value) => value ** 2;
+let getCube = (value) => value ** 3;
+
+// Rewriting Anonymous callback functions for quoteOfTheDay call
+quoteOfTheDay(
+    "Would you like a happy quote?",
+    () => alert("The future depends on what you do today - M.K Gandhi"),
+    () => alert("Each birthday is a sad reminder that you are one more year closer to your death - Osho")
+)
