@@ -24,6 +24,9 @@ function getAreaCircle(radius) {
 }
 
 // Function expression
-let getAreaRectange = function(length, breadth) {
+let getAreaRectangle = function(length, breadth) {
     return length * breadth;
 }
+
+// Copy function to another variable
+let copyOfGetAreaRectangle = getAreaRectangle;
