@@ -24,6 +24,7 @@ function getAreaCircle(radius) {
 }
 
 // Alternative syntax to declare a function (Function expression)
+// Do note that a function created through an expression cannot be called before execution reaches its line
 let getAreaRectangle = function(length, breadth) {
     return length * breadth;
 };
