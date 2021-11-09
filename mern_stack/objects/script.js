@@ -9,6 +9,7 @@ Introduction to objects
 let userDetails = {
     "name": "Dennis M Ritchie",
     "employer": "AT&T",
+    "likes computers": true,
 };
 
 // Accessing object values using dot notation
@@ -22,3 +23,8 @@ userDetails.age = 80;
 
 // Remove a property
 delete userDetails.employer;
+
+// Square notation allows accessing multi word attributes and allows use of expressions
+let myProperty = "name";
+console.log(userDetails["likes computers"]);
+console.log(userDetails[myProerty]);
