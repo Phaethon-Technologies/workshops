@@ -51,3 +51,10 @@ console.log(userDetails.os) // Gives us undefined
 if ("age" in userDetails) {
     console.log("userDetails contain age");
 }
+
+// Walk over all properties in an object using the 'for in' loop
+function walkThroughObject(passedObject) {
+    for (key in passedObject) {
+        console.log(`${key} -> ${passedObject[key]}`);
+    }
+}
