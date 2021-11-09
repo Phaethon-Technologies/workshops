@@ -63,3 +63,12 @@ function walkThroughObject(passedObject) {
 let alternativeUserDetails = userDetails;
 alternativeUserDetails["employer"] = "ACME";
 console.log(userDetails.employer) // The employer in userDetails is now ACME
+
+// Create another object
+let hobbyDetails = {
+    "hobby": "Chess",
+    "passion": "Programming",
+}
+
+// Create a new object merging two existing objects and assign it to ritchieDetails
+let ritchieDetails = Object.assign({}, userDetails, hobbyDetails);
