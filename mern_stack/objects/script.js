@@ -43,3 +43,8 @@ function returnObject(name, age) {
         "employer": "ACME",
     }
 }
+
+// Check if property is in an object
+if ("age" in userDetails) {
+    console.log("userDetails contain age");
+}
