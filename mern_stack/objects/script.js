@@ -28,3 +28,9 @@ delete userDetails.employer;
 let myProperty = "name";
 console.log(userDetails["likes computers"]);
 console.log(userDetails[myProerty]);
+
+// Using a value received from user as the property name
+let device = prompt("Which device would you like to buy?", "Computer");
+let cartInfo = {
+    [device]: 10,
+}
