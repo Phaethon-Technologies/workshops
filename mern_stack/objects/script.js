@@ -58,3 +58,8 @@ function walkThroughObject(passedObject) {
         console.log(`${key} -> ${passedObject[key]}`);
     }
 }
+
+// Copying userDetails to another variable does not create a new copy of the object
+let alternativeUserDetails = userDetails;
+alternativeUserDetails["employer"] = "ACME";
+console.log(userDetails.employer) // The employer in userDetails is now ACME
