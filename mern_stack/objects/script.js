@@ -44,7 +44,10 @@ function returnObject(name, age) {
     }
 }
 
-// Check if property is in an object
+// Accessing a non-existing property inside an object returns undefined
+console.log(userDetails.os) // Gives us undefined
+
+// Check if property is in an object, very useful when the property actually stores undefined
 if ("age" in userDetails) {
     console.log("userDetails contain age");
 }
