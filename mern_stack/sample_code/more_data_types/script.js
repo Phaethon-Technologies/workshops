@@ -31,3 +31,15 @@ fruits.push("Grapes", "Watermelon");
 
 // Display the length of the array
 console.log(`The length of our array is ${fruits.length}`);
+
+// Looping over the array in the traditional way
+console.log("Looping over the array in the traditional way...");
+for (let i = 0; i < fruits.length; ++i) {
+    console.log(`fruits[${i}] -> ${fruits[i]}`);
+}
+
+// Alternative syntax for looping over array
+console.log("We have the following fruits available...");
+for (let fruit of fruits) {
+    console.log(fruit);
+}
