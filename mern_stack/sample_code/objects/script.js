@@ -72,3 +72,8 @@ let hobbyDetails = {
 
 // Create a new object merging two existing objects and assign it to ritchieDetails
 let ritchieDetails = Object.assign({}, userDetails, hobbyDetails);
+
+// Looping over all properties in an object
+for (let prop in ritchieDetails) {
+    console.log(`${prop} -> ${ritchieDetails[prop]}`);
+}
