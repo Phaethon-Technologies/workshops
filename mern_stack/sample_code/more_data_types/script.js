@@ -39,7 +39,17 @@ for (let i = 0; i < fruits.length; ++i) {
 }
 
 // Alternative syntax for looping over array
+// 'for of' is the proper looping syntax for arrays. Avoid using 'for in'
 console.log("We have the following fruits available...");
 for (let fruit of fruits) {
     console.log(fruit);
 }
+
+// Multidimensional arrays
+let myMatrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+]
+
+
