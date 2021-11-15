@@ -86,4 +86,11 @@ anotherRitchieObject.getName = function() {
     return this.name;
 }
 
-
+// Method creation shorthand while declaring an object
+let myDistrict = {
+    "name": "Alappuzha",
+    "state": "Kerala",
+    getName() {
+        return this.name;
+    }
+}
