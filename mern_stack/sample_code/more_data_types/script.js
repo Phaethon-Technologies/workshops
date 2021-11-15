@@ -29,4 +29,5 @@ console.log(`Removing ${fruits.shift()}`);
 // Adding multiple elements at once
 fruits.push("Grapes", "Watermelon");
 
-
+// Display the length of the array
+console.log(`The length of our array is ${fruits.length}`);
