@@ -27,3 +27,6 @@ let rajan = new User();
 
 // Accessing the same using optional chaining
 console.log(`Age of Rajan is ${rajan?.age?.dob}`);
+
+// Call adminSetup() method only if it exists
+rajan.adminSetup?.();
