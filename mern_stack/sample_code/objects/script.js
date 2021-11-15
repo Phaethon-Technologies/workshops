@@ -77,3 +77,6 @@ let ritchieDetails = Object.assign({}, userDetails, hobbyDetails);
 for (let prop in ritchieDetails) {
     console.log(`${prop} -> ${ritchieDetails[prop]}`);
 }
+
+// Creating copy of an object
+let anotherRitchieObject = Object.assign({}, ritchieDetails);
