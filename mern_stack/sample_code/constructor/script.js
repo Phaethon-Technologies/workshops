@@ -7,10 +7,10 @@ Constructor functions
 
 // Define a constructor function
 function CreateAutomobile(name, fuel, manufacturer, bodyStyle) {
-    this.name = name,
-    this.fuel = fuel,
-    this.manufacturer = manufacturer,
-    this.bodyStyle = bodyStyle,
+    this.name = name;
+    this.fuel = fuel;
+    this.manufacturer = manufacturer;
+    this.bodyStyle = bodyStyle;
     this.getName = () => this.name;
     this.getFuel = () => this.fuel;
     this.getBodyStyle = () => this.bodyStyle;
