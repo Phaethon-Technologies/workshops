@@ -81,7 +81,7 @@ for (let prop in ritchieDetails) {
 // Creating copy of an object
 let anotherRitchieObject = Object.assign({}, ritchieDetails);
 
-// Create a method inside anotherRitchieObject
+// Create a method inside anotherRitchieObject and use this
 anotherRitchieObject.getName = function() {
     return this.name;
 }
