@@ -16,5 +16,6 @@ function CreateAutomobile(name, fuel, manufacturer, bodyStyle) {
     this.getBodyStyle = () => this.bodyStyle;
 }
 
-// Create an object with constructor
+// Create two automobile objects with constructor
 let zs = new CreateAutomobile("ZS", "electric", "MG", "CrossOver");
+let omni = new CreateAutomobile("Omni", "petrol", "Maruti", "MiniVan");
