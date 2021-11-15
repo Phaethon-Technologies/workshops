@@ -29,4 +29,4 @@ let rajan = new User();
 console.log(`Age of Rajan is ${rajan?.age?.dob}`);
 
 // Call adminSetup() method only if it exists
-rajan.adminSetup?.();
+rajan.adminSetup?.(); // The call does not take place
