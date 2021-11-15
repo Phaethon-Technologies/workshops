@@ -51,5 +51,4 @@ let myMatrix = [
     [4, 5, 6],
     [7, 8, 9],
 ]
-
-
+console.log(myMatrix[2][2]);
