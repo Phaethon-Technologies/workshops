@@ -6,7 +6,7 @@ Exploring more data types
 "use strict";
 
 // Declaring an array
-let fruits = ["Apple", "Orange", "gooseberry", "Strawberry",]
+let fruits = ["Apple", "Orange", "Gooseberry", "Strawberry",]
 
 // Access the second element from the array
 console.log(`My favourite fruit is ${fruits[1]}`);
@@ -25,3 +25,8 @@ fruits.unshift("Blackberry");
 
 // Remove the first element in the array (shift the array forward by one item)
 console.log(`Removing ${fruits.shift()}`);
+
+// Adding multiple elements at once
+fruits.push("Grapes", "Watermelon");
+
+
