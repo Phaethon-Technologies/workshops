@@ -36,3 +36,7 @@ console.log(christmas2006.getTime());
 let randomDate = new Date(); // randomDate currently holds the current date/time
 randomDate.setFullYear(1975); // Setting the year to 1975
 console.log(randomDate);
+
+// Get UNIX timestamps of the current time directly by calling Date.now() method
+// Get another timestamp after some time and subtract them to get time difference
+let timeStamp1 = Date.now(); // Returns millseconds elapsed since UNIX epoch
