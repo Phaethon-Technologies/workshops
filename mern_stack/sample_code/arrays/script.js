@@ -40,6 +40,7 @@ for (let i = 0; i < fruits.length; ++i) {
 
 // Alternative syntax for looping over array
 // 'for of' is the proper looping syntax for arrays. Avoid using 'for in'
+// We can use this to loop over all types of iterables as well
 console.log("We have the following fruits available...");
 for (let fruit of fruits) {
     console.log(fruit);
