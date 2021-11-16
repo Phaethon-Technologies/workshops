@@ -23,6 +23,15 @@ console.log(`${myFirstMap.has(911)}`);
 // Return the size of the map
 console.log(`The map currently has ${myFirstMap.size} elements`);
 
+// Looping over all the keys in a map
+for (let key of myFirstMap.keys()) console.log(key);
+
+// Looping over all the values in a map
+for (let value of myFirstMap.values()) console.log(value);
+
+// Loop over key value pairs in a map
+for (let pair of myFirstMap) console.log(pair);
+
 // Delete an entry from the map
 myFirstMap.delete(true);
 
