@@ -29,7 +29,7 @@ for (let key of myFirstMap.keys()) console.log(key);
 // Looping over all the values in a map
 for (let value of myFirstMap.values()) console.log(value);
 
-// Loop over key value pairs in a map
+// Loop over key value pairs in a map (alternative to myFirstMap.entries())
 for (let pair of myFirstMap) console.log(pair);
 
 // Delete an entry from the map
