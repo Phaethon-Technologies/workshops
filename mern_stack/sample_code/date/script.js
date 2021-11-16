@@ -25,3 +25,14 @@ console.log(christmas2006.getMonth());
 
 // Hours, minutes, seconds and milliseconds can be similarly retrieved
 console.log(`${christmas2006.getHours()}:${christmas2006.getMinutes()}`);
+
+// Get day of the week
+console.log(christmas2006.getDay());
+
+// get UNIX timestamp
+console.log(christmas2006.getTime());
+
+// Alter existing values inside a date object
+let randomDate = new Date(); // randomDate currently holds the current date/time
+randomDate.setFullYear(1975); // Setting the year to 1975
+console.log(randomDate);
