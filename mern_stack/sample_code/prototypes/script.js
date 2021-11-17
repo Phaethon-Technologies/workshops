@@ -34,6 +34,7 @@ function Beast(name) {
 Beast.prototype = animal; // Using this.prototype inside function definition does not work
 
 // Let us create an object using the constructor function
-let cow = new Beast("cow");
+let cow = new Beast("Cow");
 
-
+// We can use constructor of an existing object to create a new object with the same prototype
+let buffallo = new cow.constructor("Buffallo")
