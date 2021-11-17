@@ -7,6 +7,10 @@ Working with classes
 
 // Let us create a class
 class Computer {
+    // Class fields
+    input = ["keyboard", "mouse"];
+    output = ["monitor", "speaker"];
+    io = ["serial", "USB", "parallel"];
     // Constructor
     constructor(hostname) {
         this.hostname = hostname;
