@@ -38,3 +38,7 @@ let cow = new Beast("Cow");
 
 // We can use constructor of an existing object to create a new object with the same prototype
 let buffallo = new cow.constructor("Buffallo")
+
+// Modern Object.create() method to define object with prototype
+let leopard = Object.create(animal);
+leopard.name = "Leopard";
