@@ -36,9 +36,11 @@ Beast.prototype = animal; // Using this.prototype inside function definition doe
 // Let us create an object using the constructor function
 let cow = new Beast("Cow");
 
-// We can use constructor of an existing object to create a new object with the same prototype
-let buffallo = new cow.constructor("Buffallo")
+// We can use constructor of an existiffffallo")
 
 // Modern Object.create() method to define object with prototype
 let leopard = Object.create(animal);
 leopard.name = "Leopard";
+
+// Get the prototype of an object
+let prototypeOfLeopard = Object.getPrototypeOf(leopard);

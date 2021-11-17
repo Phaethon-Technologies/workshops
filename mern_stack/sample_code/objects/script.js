@@ -94,3 +94,15 @@ let myDistrict = {
         return this.name;
     }
 }
+
+// Getter and Setter example
+let salary = {
+    set amount(value) {
+        this.basic = (50/100) * value;
+        this.hra = (25/100) * value;
+        this.total = value;
+    },
+    get maxCredit() {
+        return this.basic * 4;
+    }
+}
