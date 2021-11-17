@@ -24,6 +24,14 @@ class Computer {
     setOperatingSystem(os) {
         this.OperatingSystem = os;
     }
+    // An unbounded method
+    logHostname() {
+        console.log(this.hostname);
+    }
+    // Method bound to the object
+    anotherLogHostname = () => {
+        console.log(this.hostname);
+    }
     // Our first setter
     set isServer(server) {
         self.isServer = server;
