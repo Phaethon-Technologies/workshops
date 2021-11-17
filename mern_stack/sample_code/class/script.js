@@ -48,3 +48,21 @@ class Computer {
 
 // Declare an object using Computer class;
 let myComputer = new Computer("ThinkPad");
+
+// Let us create a base class
+class Monitor {
+    constructor() {
+        this.outputDevice = true;
+    }
+}
+
+// We will now create a class for LCD monitor
+class LcdMonitor extends Monitor {
+    constructor() {
+        super();
+        this.displayType = "LCD";
+    }
+}
+
+// Create an object of LcdMonitor
+let samsungMonitor = new LcdMonitor();
