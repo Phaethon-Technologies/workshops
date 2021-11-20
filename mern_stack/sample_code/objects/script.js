@@ -1,5 +1,6 @@
 /*
 Introduction to objects
+Developed for MERN stack workshop
 */
 
 // Use all the modern JS goodiness
