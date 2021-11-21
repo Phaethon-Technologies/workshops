@@ -1,5 +1,5 @@
 /*
-Testing code in JS
+Just a simple pow() function
 */
 
 // Use all the modern JS goodiness
@@ -7,7 +7,7 @@ Testing code in JS
 
 // Raise a value to given power
 function pow(number, exponent) {
-    return number ** exponent;
+    return
 }
 
 

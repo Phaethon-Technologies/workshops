@@ -9,14 +9,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
     <!-- Configure Mocha -->
     <script>mocha.setup("bdd");</script>
+    
     <!-- Chai framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
     <!-- Make asserts global using Chai -->
     <script>let assert = chai.assert;</script>
 </head>
 
 <body>
-    <!-- Our JS code -->
+    <!-- JS file containing pow() function -->
     <script src="script.js"></script>
+    
+    <!-- Tests -->
+    <script src="test.js"></script>
+
+    <!-- Show the test results using Mocha -->
+    <div id="mocha"></div>
+
+    <!-- Run the tests -->
+    <script>mocha.run();</script>
 </body>    
 
 </html>
