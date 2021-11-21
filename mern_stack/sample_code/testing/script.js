@@ -9,5 +9,3 @@ Just a simple pow() function
 function pow(number, exponent) {
     return
 }
-
-
