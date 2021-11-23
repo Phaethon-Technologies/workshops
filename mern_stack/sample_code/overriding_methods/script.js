@@ -1,5 +1,5 @@
 /*
-Extending Classes
+Overriding class methods
 */
 
 // Use all the modern JS goodiness
@@ -15,7 +15,7 @@ class Employee {
     }
 
     // Calculate the total salary of the employee
-    getSalary() {
+    get salary() {
         let hra = this.baseSalary * (10/100);
         let travelAllowance = this.baseSalary * (15/100);
         let tuitionAllowance = this.baseSalary * (20/100);
@@ -33,12 +33,14 @@ class Intern extends Employee {
         this.baseSalary = baseSalary;
         this.intern = true;
     }
-    getSalary() {
+
+    // Salary getter for intern :)
+    get salary() {
         let tuitionAllowance = this.baseSalary * (25/100);
         return this.baseSalary + tuitionAllowance;
     }
 }
 
 // Create an intern object
-let jiju = new Intern("Jiju Varghese", "Finance", 25000);
+let jiju = new Intern("Jiju Varghese", "KECCS", "Finance", 25000);
 
