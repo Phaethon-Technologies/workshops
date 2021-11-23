@@ -24,6 +24,10 @@ class Employee {
 
 // Class for interns
 class Intern extends Employee {
+    getSalary() {
+        let tuitionAllowance = this.baseSalary * (25/100);
+        return this.baseSalary + tuitionAllowance;
+    }
 }
 
 // Create an intern object
