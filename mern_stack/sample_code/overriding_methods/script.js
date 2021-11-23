@@ -11,6 +11,7 @@ class Employee {
         this.name = name;
         this.department = department;
         this.baseSalary = baseSalary;
+        this.intern = false;
     }
 
     // Calculate the total salary of the employee
@@ -24,6 +25,14 @@ class Employee {
 
 // Class for interns
 class Intern extends Employee {
+    constructor(name, school, department, baseSalary) {
+        super();
+        this.name = name;
+        this.school = school;
+        this.department = department;
+        this.baseSalary = baseSalary;
+        this.intern = true;
+    }
     getSalary() {
         let tuitionAllowance = this.baseSalary * (25/100);
         return this.baseSalary + tuitionAllowance;
