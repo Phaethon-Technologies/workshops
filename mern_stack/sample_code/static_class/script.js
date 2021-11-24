@@ -1,5 +1,5 @@
 /*
-Overriding class methods
+Static methods in classes
 */
 
 // Use all the modern JS goodiness
