@@ -5,9 +5,9 @@ Let us use prompt, alert and confirm
 // Use all the modern JS goodiness
 "use strict";
 
-alert("Hello");
+class JustAClass {
+    name = "AE86";
+    manufacturer = "Toyota";
+    this.genericName = "Corolla"; // this is not allowed in a class field 
+}
 
-// Run the debugger
-debugger;
-
-alert("World!");
