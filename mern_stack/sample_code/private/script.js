@@ -6,7 +6,7 @@ Protected and private properties
 "use strict";
 
 // Class with a private number, green, blue values 
-class Interrupt{
+class Interrupt {
     set number(value) {
         this._number = this._cleanedValue(value);
     }
@@ -19,10 +19,13 @@ class Interrupt{
         // Fix out of range values 
         if (value > 255) {
             return 255;
-        } elif (value < 0) {
+        } else if (value < 0) {
             return 0;
         }
         return value;
     }
 }
+
+// Create an object of Interrupt 
+let nonMaskable = new Interrupt();
 
