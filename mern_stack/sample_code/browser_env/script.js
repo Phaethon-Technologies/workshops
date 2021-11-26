@@ -16,3 +16,6 @@ alert(`Your userAgent is -> ${navigator.userAgent}`);
 // Get the platform
 alert(`You are running ${navigator.platform}`);
 
+// The location object
+alert(`You are currently accessing ${location.href}`);
+
