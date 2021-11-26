@@ -8,8 +8,9 @@ Using mixins in JavaScript
 // Mixin object
 let utilsMixin = {
     getAge() {
-        let currentDate = Date();
-        return currentDate - this.dateOfBirth;
+        let currentDate = new Date();
+        let diff = currentDate - this.dateOfBirth;
+        return diff;
     }
 }
 
@@ -17,11 +18,13 @@ let utilsMixin = {
 class Person {
     constructor(name, dateOfBirth, gender) {
         this.name = name;
-        this.dateOfBirth = dateOfBirth;
+        this.dateOfBirth = new Date(dateOfBirth);
         this.gender = gender;
     }
 }
 // Copy the utilsMixin methods to Person class prototype
 Object.assign(Person.prototype, utilsMixin);
 
+// Create a person object
+let ajay = new Person("Ajay", "1998-11-23", "Male");
 
