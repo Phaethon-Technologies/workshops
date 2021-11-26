@@ -66,3 +66,7 @@ class LcdMonitor extends Monitor {
 
 // Create an object of LcdMonitor
 let samsungMonitor = new LcdMonitor();
+
+// Check whether samsungMonitor is an instance of LcdMonitor
+console.log(`samsungMonitor is an object of LcdMontior -> ${samsungMonitor instanceof LcdMonitor}`);
+
