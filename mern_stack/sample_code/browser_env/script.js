@@ -1,5 +1,5 @@
 /*
-Using JavaScript in browser environment
+Working with JavaScript in browser environment
 */
 
 // Use all the modern JS goodiness
@@ -11,11 +11,16 @@ document.body.style.background = "black";
 setTimeout(() => document.body.style.background = "", 1000);
 
 // Get the userAgent
-alert(`Your userAgent is -> ${navigator.userAgent}`);
+console.log(`Your userAgent is -> ${navigator.userAgent}`);
 
 // Get the platform
-alert(`You are running ${navigator.platform}`);
+console.log(`You are running ${navigator.platform}`);
 
 // The location object
-alert(`You are currently accessing ${location.href}`);
+console.log(`You are currently accessing ${location.href}`);
+
+// Loop over the children of body
+for (let child of document.childNodes) {
+    console.log(child);
+}
 
