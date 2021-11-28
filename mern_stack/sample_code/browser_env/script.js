@@ -19,7 +19,7 @@ console.log(`You are running ${navigator.platform}`);
 // The location object
 console.log(`You are currently accessing ${location.href}`);
 
-// Loop over the children of body
+// Loop over the children of document 
 for (let child of document.childNodes) {
     console.log(child);
 }
