@@ -17,10 +17,11 @@
     <script>
         // Let's be script
         "use strict";
+
         // Script loading function without callback
         // To see error, do the following
         // 1. Replace loadScriptWithCallback() call with loadScript()
-        // 2. Uncomment line 46
+        // 2. Uncomment line 47
         function loadScript(scriptPath) {
             let script = document.createElement("script");
             script.src = scriptPath; 
@@ -31,7 +32,7 @@
         function loadScriptWithCallback(scriptPath, callback) {
             let script = document.createElement("script");
             script.src = scriptPath;
-            script.onload = () => callback();
+            script.onload = () => callback(); // Allows us to pass args
             document.head.append(script);
         }
 
