@@ -18,6 +18,9 @@
         // Let's be script
         "use strict";
         // Script loading function without callback
+        // To see error, do the following
+        // 1. Replace loadScriptWithCallback() call with loadScript()
+        // 2. Uncomment line 46
         function loadScript(scriptPath) {
             let script = document.createElement("script");
             script.src = scriptPath; 
@@ -28,13 +31,14 @@
         function loadScriptWithCallback(scriptPath, callback) {
             let script = document.createElement("script");
             script.src = scriptPath;
-            script.onload = callback();
+            script.onload = () => callback();
             document.head.append(script);
         }
 
         // Callback function
         function callback() {
-            console.log("This Works!");
+            console.log("Script has been loaded");
+            console.log(getCurrentTime());
         }
 
         // Load the script and call getCurrentTime() function in script.js
