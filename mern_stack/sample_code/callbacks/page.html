@@ -15,13 +15,31 @@
 
     <!--Script-->
     <script>
-        function loadScript1(script_file) {
+        // Let's be script
+        "use strict";
+        // Script loading function without callback
+        function loadScript(scriptPath) {
             let script = document.createElement("script");
-            script.src = script_file; 
+            script.src = scriptPath; 
             document.head.append(script);
         }
-        loadScript1("script.js");
-        getCurrentTime(); // This can cause an error
+
+        // Script loading function with callback
+        function loadScriptWithCallback(scriptPath, callback) {
+            let script = document.createElement("script");
+            script.src = scriptPath;
+            script.onload = callback();
+            document.head.append(script);
+        }
+
+        // Callback function
+        function callback() {
+            console.log("This Works!");
+        }
+
+        // Load the script and call getCurrentTime() function in script.js
+        loadScriptWithCallback("script.js", callback);
+        // getCurrentTime(); // This can cause an error
     </script>
 </body>    
 
