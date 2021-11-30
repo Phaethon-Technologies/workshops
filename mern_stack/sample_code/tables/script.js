@@ -19,3 +19,6 @@ myTable.rows[0].bgColor = "Brown";
 console.log(`Zeroth row's zeroth element is`);
 console.log(myTable.rows[0].cells[1]);
 
+// The index of a cell can be accessed using cellIndex property
+console.log(myTable.rows[0].cells[1].cellIndex);
+
