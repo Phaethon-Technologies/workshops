@@ -32,3 +32,24 @@ failedPromise.then(
 // without passing it to the Promise.then() method
 // failedPromise.then(alert(value), alert(value));
 
+// A simple Christmas checker
+let anotherPromise = new Promise(function(resolve, reject) {
+    // Get date and month
+    let dateObj = new Date();
+    if (dateObj.getDate() == 25 && dateObj.getMonth() == 11) {
+        resolve("It's Christmas!");
+    }
+    reject("It's not Santa's time yet");
+});
+
+// Let's handle anotherPromise 
+anotherPromise.then(
+    successMessage => promiseLogger(successMessage),
+    failureMessage => promiseLogger(failureMessage)
+);
+
+// Log promise results to the console
+function promiseLogger(message) {
+    console.log(message);
+}
+
