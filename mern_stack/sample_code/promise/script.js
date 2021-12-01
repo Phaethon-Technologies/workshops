@@ -28,3 +28,7 @@ failedPromise.then(
     error => alert(error)
 )
 
+// Below code fails, as we end up calling the alert function,
+// without passing it to the Promise.then() method
+// failedPromise.then(alert(value), alert(value));
+
