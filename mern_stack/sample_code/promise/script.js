@@ -43,9 +43,10 @@ let xmasPromise = new Promise(function(resolve, reject) {
 // The finally clause executes no matter what happens to a promise
 xmasPromise.then(
     successMessage => promiseLogger(successMessage),
-    failureMessage => promiseLogger(failureMessage)
 ).finally(
-    () => promiseLogger("End of the road!")
+    () => promiseLogger("End of execution -> finally clause reached")
+).catch(
+    failureMessage => promiseLogger(failureMessage)
 );
 
 // Log promise results to the console
