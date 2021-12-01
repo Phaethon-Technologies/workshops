@@ -11,31 +11,38 @@ class Computer {
     input = ["keyboard", "mouse"];
     output = ["monitor", "speaker"];
     io = ["serial", "USB", "parallel"];
+
     // Constructor
     constructor(hostname) {
         this.hostname = hostname;
         this.architecture = "ARM";
     }
+
     // Normal method
     getHostname() {
         return this.hostname;
     }
+
     // Another method
     setOperatingSystem(os) {
         this.OperatingSystem = os;
     }
+
     // An unbounded method
     logHostname() {
         console.log(this.hostname);
     }
+
     // Method bound to the object
     anotherLogHostname = () => {
         console.log(this.hostname);
     }
+
     // Our first setter
     set isServer(server) {
         self.isServer = server;
     }
+
     // Our first getter method
     get isServer() {
         if (!isServer) {

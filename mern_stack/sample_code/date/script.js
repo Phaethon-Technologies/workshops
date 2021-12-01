@@ -39,4 +39,4 @@ console.log(randomDate);
 
 // Get UNIX timestamps of the current time directly by calling Date.now() method
 // Get another timestamp after some time and subtract them to get time difference
-let timeStamp1 = Date.now(); // Returns millseconds elapsed since UNIX epoch
+let timeStamp1 = Date.now(); // Returns milliseconds elapsed since UNIX epoch
