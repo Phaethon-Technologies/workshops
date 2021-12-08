@@ -14,12 +14,12 @@ const collection = database.collection("students");
 // The filter to be passed to DB
 const filter = { "semester": "S6" };
 
-async function mongoConnect(collection) {
+async function mongoConnect(database) {
     try {
         // Connect to DB
         await client.connect();
 
-        const result = await collection.drop();
+        const result = await database.dropDatabase();
     }
     finally {
         await client.close();
@@ -27,5 +27,5 @@ async function mongoConnect(collection) {
 }
 
 // Connect to MongoDB and do stuff
-mongoConnect(collection).catch(console.dir);
+mongoConnect(database).catch(console.dir);
 
