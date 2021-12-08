@@ -12,12 +12,12 @@ const database = client.db("workshop");
 const collection = database.collection("students");
 
 // The filter to be passed to DB
-const filter = { "name": "Mehfil" };
+const filter = { "semester": "S6" };
 
 // Update roll number for the resultant document
 const updateDoc = {
     $set: {
-        roll: 33,
+        semester: "S7",
     },
 }
 
@@ -27,10 +27,10 @@ async function mongoConnect(collection, filter, options) {
         await client.connect();
 
         // Setup cursor to find all matching documents
-        const result = await collection.updateOne(filter, updateDoc);
+        const result = await collection.updateMany(filter, updateDoc);
 
         // Print update document count
-        console.log(result.matchedCount, "documents were updated");
+        console.log(result.modifiedCount, "documents were updated");
     }
     finally {
         await client.close();
