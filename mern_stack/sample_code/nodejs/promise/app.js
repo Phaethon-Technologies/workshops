@@ -1,5 +1,5 @@
 // A simple Christmas checker
-let xmasPromise = new Promise(function(resolve, reject) {
+let xmasPromise = new Promise((resolve, reject) => {
     // Get date and month
     let dateObj = new Date();
     if (dateObj.getDate() == 25 && dateObj.getMonth() == 11) {
