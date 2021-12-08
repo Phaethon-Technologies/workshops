@@ -28,7 +28,7 @@ async function mongoConnect(database, collection, docs) {
         const options = { ordered: true };
 
         // Insert documents
-        const result = await collection.insertMany(docs);
+        const result = await collection.insertMany(docs, options);
         console.log(result.insertedCount, "documents were inserted");
     }
     finally {
