@@ -16,7 +16,7 @@ const query = { "semester": "S6" };
 
 // Options to use
 const options = {
-    sort: { "roll": -1 },
+    sort: { "roll": 1 },
 };
 
 async function mongoConnect(collection, query, options) {
@@ -24,9 +24,16 @@ async function mongoConnect(collection, query, options) {
         // Connect to DB
         await client.connect();
 
-        // Find document 
-        const result = await collection.findOne(query, options);
-        console.log(result);
+        // Setup cursor to find all matching documents
+        const cursor = await collection.find(query, options);
+
+        // Alert user if no documents were found
+        if ((await cursor.count()) == 0) {
+            console.log("No documents found!");
+        }
+
+        // Print each document found
+        await cursor.forEach(console.dir);
     }
     finally {
         await client.close();
