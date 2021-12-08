@@ -14,18 +14,18 @@ async function mongoConnect() {
 
         // Set the DB and collection
         const database = client.db("workshop");
-        const mern_stack = database.collection("mern_stack");
+        const mern_stack = database.collection("Git");
 
         // Create document to insert
         const doc = {
-            title: "MERN Stack workshop",
+            title: "Git workshop",
             institution: "College of Engineering Cherthala",
             audience: "B.Tech, CS students"
         }
 
         // Insert the document
         const result = await mern_stack.insertOne(doc);
-        console.log("Document inserted");
+        console.log("Document inserted with _id -> ", result.insertedId);
     }
     finally {
         await client.close();
