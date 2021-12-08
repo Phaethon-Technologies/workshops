@@ -14,7 +14,6 @@ const collection = database.collection("students");
 // The filter to be passed to DB
 const filter = { "name": "Tom" };
 
-// Update roll number for the resultant document
 const replacement = {
     "name": "Sanjana",
     "roll": 67,
@@ -26,10 +25,9 @@ async function mongoConnect(collection, filter, replacement) {
         // Connect to DB
         await client.connect();
 
-        // Setup cursor to find all matching documents
         const result = await collection.replaceOne(filter, replacement);
 
-        // Print update document count
+        // Print updated document count
         console.log(result.modifiedCount, "document(s) were updated");
     }
     finally {
