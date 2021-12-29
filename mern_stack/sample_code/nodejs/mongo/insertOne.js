@@ -13,12 +13,12 @@ async function mongoConnect() {
         await client.connect();
 
         // Set the DB and collection
-        const database = client.db("workshop");
-        const mern_stack = database.collection("Git");
+        const database = client.db("workshop_db");
+        const mern_stack = database.collection("mern_stack");
 
         // Create document to insert
         const doc = {
-            title: "Git workshop",
+            title: "MERN Stack workshop",
             institution: "College of Engineering Cherthala",
             audience: "B.Tech, CS students"
         }

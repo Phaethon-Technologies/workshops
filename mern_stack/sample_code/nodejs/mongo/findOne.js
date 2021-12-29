@@ -8,11 +8,11 @@ const uri = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(uri);
 
 // Set the DB and collection
-const database = client.db("workshop");
-const collection = database.collection("students");
+const database = client.db("workshop_db");
+const collection = database.collection("mern_stack");
 
 // The query to be passed to DB
-const query = { "semester": "S6" };
+const query = { "institution": "College of Engineering Cherthala" };
 
 // Options to use
 const options = {
@@ -25,7 +25,7 @@ async function mongoConnect(collection, query, options) {
         await client.connect();
 
         // Find document 
-        const result = await collection.findOne(query, options);
+        const result = await collection.findOne(query);
         console.log(result);
     }
     finally {
